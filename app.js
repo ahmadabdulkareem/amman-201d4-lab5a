@@ -9,10 +9,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-    var theSum = a + b;
-    // 'The sum of 4 and 7 is 11.'
-    var message = `The sum of ${a} and ${b} is ${theSum}.`;
-    return [theSum, message];
+  var adding= a+b;
+
+  //sum1 = sum
+  var msag= `The sum of ${a} and ${b} is ${adding}.`;
+  return[adding , msag];
+  
+  
 }
 testSum(4, 7);
 
@@ -36,9 +39,9 @@ function multiply(y, x) { //eslint-disable-line
 return[theproduct, Mesg];
 
 }
-testMultiply();
+//testMultiply();
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -79,14 +82,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
-
+var sum0=0;
 function sumArray(sumArr) { //eslint-disable-line
-
+  var sum0= 0;
+ for(var i=0; i<sumArr.length; i++){
+    sum0=sum(sum0, sumArr[i])[0];
+  }
+   console.log(sum0);
+ 
+ var msg0 =`${sumArr} was passed in as an array of numbers, and ${sum0} is their sum.`;
+  return[sum0, msg0];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
