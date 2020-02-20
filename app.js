@@ -19,8 +19,7 @@ function sum(a, b) { //eslint-disable-line
 
     var theSum = a + b;
     var message = `The sum of ${a} and ${b} is ${theSum}.`;
-    return [theSum, message];
-}
+    return [theSum, message];}
 testSum(4, 7);
 
 // Here is the test for sum(); uncomment it to run it
